@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=height, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>enter the numbers</h1>
+    <br>
+    <input type="number" id="inp1" placeholder="no1">
+    <br>
+    <input type="number" id="inp2" placeholder="no2">
+    <br>
+    <button onclick="add()">ADD</button>
+    <br>
+    <P ID="ans"></P>
+    <script>
+        function add(){
+            var a = parseInt(document.getElementById("inp1").value);
+            var b = parseInt(document.getElementById("inp2").value);
+            var c = a+b;
+            document.getElementById("ans").innerHTML="result"+c;
+        }
+    </script>
+</body>
+</html>
